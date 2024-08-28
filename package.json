@@ -1,10 +1,13 @@
 {
+  "homepage": "https://Vfilme.github.io/alpha-ecosystem",
   "name": "alpha-ecosystem",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --mode development --open",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
